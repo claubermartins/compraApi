@@ -49,8 +49,8 @@ public class CompraController {
         return ResponseEntity.ok(compraUpdated);
     }
     @DeleteMapping
-    ResponseEntity<Compra> delete(@RequestBody Compra pessoa){
-        compraService.delete(pessoa);
+    ResponseEntity<Compra> delete(@RequestBody Compra compra){
+        compraService.delete(compra);
         return ResponseEntity.ok().build();
     }
 }
